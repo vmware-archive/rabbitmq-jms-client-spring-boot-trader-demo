@@ -41,23 +41,23 @@ It might take a minute or two to download some dependencies if this is the first
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::  (v0.5.0.BUILD-SNAPSHOT)
 
-2013-10-25 09:15:42.044  INFO 68139 --- [ckQuoter.main()] com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 68139 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/classes started by gturnquist)
-2013-10-25 09:15:42.076  INFO 68139 --- [ckQuoter.main()] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@507d259: startup date [Fri Oct 25 09:15:42 CDT 2013]; root of context hierarchy
-2013-10-25 09:15:42.343  INFO 68139 --- [ckQuoter.main()] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
-2013-10-25 09:15:42.440  INFO 68139 --- [ckQuoter.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.scheduling.annotation.SchedulingConfiguration' of type [class org.springframework.scheduling.annotation.SchedulingConfiguration$$EnhancerByCGLIB$$bdff0256] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2013-10-25 09:15:42.653  INFO 68139 --- [ckQuoter.main()] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
-2013-10-25 09:15:42.774  INFO 68139 --- [ckQuoter.main()] com.rabbitmq.jms.sample.StockQuoter      : Started StockQuoter in 1.097 seconds
-2013-10-25 09:15:42.775  INFO 68139 --- [ol-141-thread-1] com.rabbitmq.jms.sample.StockQuoter      : Quote...AAPL is now 524.0
-2013-10-25 09:15:42.776  INFO 68139 --- [ckQuoter.main()] com.rabbitmq.jms.sample.StockQuoter      : connectionFactory => com.rabbitmq.jms.admin.RMQConnectionFactory@7da0a60b
-2013-10-25 09:15:42.887  INFO 68139 --- [  jmsListener-1] com.rabbitmq.jms.sample.StockConsumer    : Received Quote...AAPL is now 524.0
-2013-10-25 09:15:47.772  INFO 68139 --- [ol-141-thread-1] com.rabbitmq.jms.sample.StockQuoter      : Quote...AAPL is now 503.0
-2013-10-25 09:15:47.788  INFO 68139 --- [  jmsListener-1] com.rabbitmq.jms.sample.StockConsumer    : Received Quote...AAPL is now 503.0
-2013-10-25 09:15:52.782  INFO 68139 --- [ol-141-thread-1] com.rabbitmq.jms.sample.StockQuoter      : Quote...GD is now 93.0
-2013-10-25 09:15:52.884  INFO 68139 --- [  jmsListener-1] com.rabbitmq.jms.sample.StockConsumer    : Received Quote...GD is now 93.0
-2013-10-25 09:15:57.772  INFO 68139 --- [ol-141-thread-1] com.rabbitmq.jms.sample.StockQuoter      : Quote...BRK.B is now 113.0
-2013-10-25 09:15:57.866  INFO 68139 --- [  jmsListener-1] com.rabbitmq.jms.sample.StockConsumer    : Received Quote...BRK.B is now 113.0
-2013-10-25 09:16:02.772  INFO 68139 --- [ol-141-thread-1] com.rabbitmq.jms.sample.StockQuoter      : Quote...GD is now 92.0
-2013-10-25 09:16:02.839  INFO 68139 --- [  jmsListener-1] com.rabbitmq.jms.sample.StockConsumer    : Received Quote...GD is now 92.0
+2013-10-25 09:15:42.044  ... com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 68139 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/classes started by gturnquist)
+2013-10-25 09:15:42.076  ... s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@507d259: startup date [Fri Oct 25 09:15:42 CDT 2013]; root of context hierarchy
+2013-10-25 09:15:42.343  ... o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2013-10-25 09:15:42.440  ... trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.scheduling.annotation.SchedulingConfiguration' of type [class org.springframework.scheduling.annotation.SchedulingConfiguration$$EnhancerByCGLIB$$bdff0256] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2013-10-25 09:15:42.653  ... o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2013-10-25 09:15:42.774  ... com.rabbitmq.jms.sample.StockQuoter      : Started StockQuoter in 1.097 seconds
+2013-10-25 09:15:42.775  ... com.rabbitmq.jms.sample.StockQuoter      : Quote...AAPL is now 524.0
+2013-10-25 09:15:42.776  ... com.rabbitmq.jms.sample.StockQuoter      : connectionFactory => com.rabbitmq.jms.admin.RMQConnectionFactory@7da0a60b
+2013-10-25 09:15:42.887  ... com.rabbitmq.jms.sample.StockConsumer    : Received Quote...AAPL is now 524.0
+2013-10-25 09:15:47.772  ... com.rabbitmq.jms.sample.StockQuoter      : Quote...AAPL is now 503.0
+2013-10-25 09:15:47.788  ... com.rabbitmq.jms.sample.StockConsumer    : Received Quote...AAPL is now 503.0
+2013-10-25 09:15:52.782  ... com.rabbitmq.jms.sample.StockQuoter      : Quote...GD is now 93.0
+2013-10-25 09:15:52.884  ... com.rabbitmq.jms.sample.StockConsumer    : Received Quote...GD is now 93.0
+2013-10-25 09:15:57.772  ... com.rabbitmq.jms.sample.StockQuoter      : Quote...BRK.B is now 113.0
+2013-10-25 09:15:57.866  ... com.rabbitmq.jms.sample.StockConsumer    : Received Quote...BRK.B is now 113.0
+2013-10-25 09:16:02.772  ... com.rabbitmq.jms.sample.StockQuoter      : Quote...GD is now 92.0
+2013-10-25 09:16:02.839  ... com.rabbitmq.jms.sample.StockConsumer    : Received Quote...GD is now 92.0
 ```
 
 In the midst of all that output, you should notice this:
@@ -90,15 +90,15 @@ This will use Maven to build and launch the application as well.
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::  (v0.5.0.BUILD-SNAPSHOT)
 
-2013-10-25 09:26:24.510  INFO 68721 --- [ckQuoter.main()] com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 68721 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/classes started by gturnquist)
-2013-10-25 09:26:24.555  INFO 68721 --- [ckQuoter.main()] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4bdb635a: startup date [Fri Oct 25 09:26:24 CDT 2013]; root of context hierarchy
-2013-10-25 09:26:24.797  INFO 68721 --- [ckQuoter.main()] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
-2013-10-25 09:26:24.886  INFO 68721 --- [ckQuoter.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.scheduling.annotation.SchedulingConfiguration' of type [class org.springframework.scheduling.annotation.SchedulingConfiguration$$EnhancerByCGLIB$$82fdc4dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2013-10-25 09:26:25.080  INFO 68721 --- [ckQuoter.main()] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
-2013-10-25 09:26:25.187  INFO 68721 --- [ckQuoter.main()] com.rabbitmq.jms.sample.StockQuoter      : Started StockQuoter in 1.027 seconds
-2013-10-25 09:26:25.187  INFO 68721 --- [pool-3-thread-1] com.rabbitmq.jms.sample.StockQuoter      : Quote...BRK.B is now 107.0
-2013-10-25 09:26:25.188  INFO 68721 --- [ckQuoter.main()] com.rabbitmq.jms.sample.StockQuoter      : connectionFactory => com.rabbitmq.jms.admin.RMQConnectionFactory@4167dd87
-2013-10-25 09:26:25.323  INFO 68721 --- [  jmsListener-1] com.rabbitmq.jms.sample.StockConsumer    : Received Quote...BRK.B is now 107.0
+2013-10-25 09:26:24.510  ... com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 68721 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/classes started by gturnquist)
+2013-10-25 09:26:24.555  ... s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4bdb635a: startup date [Fri Oct 25 09:26:24 CDT 2013]; root of context hierarchy
+2013-10-25 09:26:24.797  ... o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2013-10-25 09:26:24.886  ... trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.scheduling.annotation.SchedulingConfiguration' of type [class org.springframework.scheduling.annotation.SchedulingConfiguration$$EnhancerByCGLIB$$82fdc4dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2013-10-25 09:26:25.080  ... o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2013-10-25 09:26:25.187  ... com.rabbitmq.jms.sample.StockQuoter      : Started StockQuoter in 1.027 seconds
+2013-10-25 09:26:25.187  ... com.rabbitmq.jms.sample.StockQuoter      : Quote...BRK.B is now 107.0
+2013-10-25 09:26:25.188  ... com.rabbitmq.jms.sample.StockQuoter      : connectionFactory => com.rabbitmq.jms.admin.RMQConnectionFactory@4167dd87
+2013-10-25 09:26:25.323  ... com.rabbitmq.jms.sample.StockConsumer    : Received Quote...BRK.B is now 107.0
 ```
 
 Pretty much the same stuff.
@@ -126,7 +126,7 @@ As you can see, the JAR file is runnable.
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::  (v0.5.0.BUILD-SNAPSHOT)
 
-2013-10-25 09:37:57.838  INFO 69317 --- [           main] com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 69317 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/rabbit-jms-boot-demo-1.0.4-SNAPSHOT.jar started by gturnquist)
+2013-10-25 09:37:57.838  ... com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 69317 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/rabbit-jms-boot-demo-1.0.4-SNAPSHOT.jar started by gturnquist)
 …
 ```
 
