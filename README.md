@@ -115,13 +115,41 @@ This creates a JAR file that you can hand out as well as run from the command li
 $ java -jar target/rabbit-jms-boot-demo-1.0.4-SNAPSHOT.jar
 ```
 
+As you can see, the JAR file is runnable.
+
+```
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::  (v0.5.0.BUILD-SNAPSHOT)
+
+2013-10-25 09:37:57.838  INFO 69317 --- [           main] com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 69317 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/rabbit-jms-boot-demo-1.0.4-SNAPSHOT.jar started by gturnquist)
+…
+```
+
+This means you can load it up in your favorite IDE, open up `StockQuoter`, and look for this:
+
+```java
+	public static void main(String[] args) {
+		ApplicationContext ctx = SpringApplication.run(StockQuoter.class, args);
+		log.info("connectionFactory => " + ctx.getBean("connectionFactory"));
+	}
+```
+
+That is a plain ole `public static void main`, which you can run in debug mode inside your IDE with check points in order to see what's going on.
+
+Happy coding!
+
 Version issues
 --------------
 This code is clearly using Rabbit JMS 1.0.4 even though 1.1.0 is out. I couldn't get all the right artifacts to download from maven central with 1.1.0, so I backed it up to a point where it DID work.
 
-Another nugget of dependency management: it has both Spring Boot and Rabbit JMS as parent dependencies. Maven only lets you have one parent, so this little work around was used.
+Another nugget of dependency management: it has both Spring Boot and Rabbit JMS as parent dependencies. Maven only lets you have one parent, so a small work around was used.
 
-The project's parent dependency is spring-boot-starter-parent. That lets it pull in default versions of things like Spring JMS without having to spec the versions by leaning on Spring Boot's choices.
+The project's parent dependency is **spring-boot-starter-parent**. That lets it pull in default versions of things like Spring JMS without having to spec the versions by leaning on Spring Boot's choices.
 
 ```xml
     <parent>
@@ -147,7 +175,7 @@ But it also gets stuff from Rabbit JMS.
     </dependencyManagement>
 ```
 
-This should theoretically let you pull in whatever rabbitmq-jms-parent says in extra dependency management.
+This should theoretically let you pull in whatever rabbitmq-jms-parent says in extra dependency management. We aren't using any in this demo, but you might need some.
 
 > **Note:** I'm not a maven expert, so if this is off kilter, please advise or send a pull request.
 
