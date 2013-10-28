@@ -7,7 +7,7 @@ To use it, you need to have RabbitMQ [installed](http://www.rabbitmq.com/downloa
 Assuming you have this up in one of your terminal windows:
 
 ```
-$ rabbitmq-server 
+$ rabbitmq-server
 
               RabbitMQ 3.1.5. Copyright (C) 2007-2013 GoPivotal, Inc.
   ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
@@ -81,7 +81,6 @@ $ mvn clean spring-boot:run
 This will use Maven to build and launch the application as well.
 
 ```
-
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
@@ -112,7 +111,7 @@ $ mvn clean package
 This creates a JAR file that you can hand out as well as run from the command line.
 
 ```
-$ java -jar target/rabbit-jms-boot-demo-1.0.4-SNAPSHOT.jar
+$ java -jar target/rabbit-jms-boot-demo-1.1.0-SNAPSHOT.jar
 ```
 
 As you can see, the JAR file is runnable.
@@ -126,7 +125,7 @@ As you can see, the JAR file is runnable.
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::  (v0.5.0.BUILD-SNAPSHOT)
 
-2013-10-25 09:37:57.838  ... com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 69317 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/rabbit-jms-boot-demo-1.0.4-SNAPSHOT.jar started by gturnquist)
+2013-10-25 09:37:57.838  ... com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 69317 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/rabbit-jms-boot-demo-1.1.0-SNAPSHOT.jar started by gturnquist)
 …
 ```
 
@@ -139,17 +138,15 @@ This means you can load it up in your favorite IDE, open up `StockQuoter`, and l
 	}
 ```
 
-That is a plain ole `public static void main`, which you can run in debug mode inside your IDE with check points in order to see what's going on.
+That is a plain ole **`public static void`**` main`, which you can run in debug mode inside your IDE with check points in order to see what's going on.
 
 Happy coding!
 
 Version issues
 --------------
-This code is clearly using Rabbit JMS 1.0.4 even though 1.1.0 is out. I couldn't get all the right artifacts to download from maven central with 1.1.0, so I backed it up to a point where it DID work.
+This code is using Rabbit JMS Client 1.1.0 at SNAPSHOT level. We should use a production version.
 
-Another nugget of dependency management: it has both Spring Boot and Rabbit JMS as parent dependencies. Maven only lets you have one parent, so a small work around was used.
-
-The project's parent dependency is **spring-boot-starter-parent**. That lets it pull in default versions of things like Spring JMS without having to spec the versions by leaning on Spring Boot's choices.
+The project's parent dependency is **`spring-boot-starter-parent`**. That lets it pull in default versions of things like Spring JMS without having to spec the versions by leaning on Spring Boot's choices.
 
 ```xml
     <parent>
@@ -159,25 +156,19 @@ The project's parent dependency is **spring-boot-starter-parent**. That lets it 
     </parent>
 ```
 
-But it also gets stuff from Rabbit JMS.
+But it mandates a specific `rabbit-jms` client version:
 
 ```xml
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>com.rabbitmq.jms</groupId>
-                <artifactId>rabbitmq-jms-parent</artifactId>
+                <artifactId>rabbitmq-jms</artifactId>
                 <version>${rabbitmq-jms.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
 ```
-
-This should theoretically let you pull in whatever rabbitmq-jms-parent says in extra dependency management. We aren't using any in this demo, but you might need some.
-
-> **Note:** I'm not a maven expert, so if this is off kilter, please advise or send a pull request.
 
 Help
 ----
