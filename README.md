@@ -9,7 +9,7 @@ Assuming you have this up in one of your terminal windows:
 ```
 $ rabbitmq-server
 
-              RabbitMQ 3.1.5. Copyright (C) 2007-2013 GoPivotal, Inc.
+              RabbitMQ 3.2.0. Copyright (C) 2007-2013 GoPivotal, Inc.
   ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
   ##  ##
   ##########  Logs: /usr/local/var/log/rabbitmq/rabbit@localhost.log
