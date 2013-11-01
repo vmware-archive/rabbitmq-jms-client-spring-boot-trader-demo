@@ -138,7 +138,7 @@ This means you can load it up in your favorite IDE, open up `StockQuoter`, and l
 	}
 ```
 
-That is a plain ole **`public static void`**` main`, which you can run in debug mode inside your IDE with check points in order to see what's going on.
+That is a plain ole **`public static void main`**, which you can run in debug mode inside your IDE with check points in order to see what's going on.
 
 Happy coding!
 
