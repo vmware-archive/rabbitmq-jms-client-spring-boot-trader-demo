@@ -1,7 +1,7 @@
 package com.rabbitmq.jms.sample
 
 @GrabResolver(name="vmware-snapshot", root="http://private.maven.vmware.com.s3.amazonaws.com/snapshot")
-@Grab("com.rabbitmq.jms:rabbitmq-jms:1.1.1-SNAPSHOT")
+@Grab("com.rabbitmq.jms:rabbitmq-jms:1.1.1")
 
 import com.rabbitmq.jms.admin.RMQConnectionFactory
 
