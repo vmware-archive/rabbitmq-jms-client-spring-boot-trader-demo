@@ -125,7 +125,7 @@ As you can see, the JAR file is runnable.
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::  (v0.5.0.BUILD-SNAPSHOT)
 
-2013-10-25 09:37:57.838  ... com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 69317 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/rabbit-jms-boot-demo-1.0.0-SNAPSHOT.jar started by gturnquist)
+2013-10-25 09:37:57.838  ... com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 69317 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/rabbit-jms-boot-demo-1.0.1-SNAPSHOT.jar started by gturnquist)
 …
 ```
 
@@ -144,7 +144,7 @@ Happy coding!
 
 Version issues
 --------------
-This code is using Rabbit JMS Client 1.1.2-SNAPSHOT level. We should use a production version.
+This code is using Rabbit JMS Client 1.1.2 level. We should use a production version.
 
 The project's parent dependency is **`spring-boot-starter-parent`**. That lets it pull in default versions of things like Spring JMS without having to spec the versions by leaning on Spring Boot's choices.
 
