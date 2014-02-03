@@ -9,7 +9,7 @@ Assuming you have this up in one of your terminal windows:
 ```
 $ rabbitmq-server
 
-              RabbitMQ 3.2.1. Copyright (C) 2007-2013 Pivotal Software, Inc.
+              RabbitMQ 3.2.3. Copyright (C) 2007-2014 Pivotal Software, Inc.
   ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
   ##  ##
   ##########  Logs: /usr/local/var/log/rabbitmq/rabbit@localhost.log
@@ -125,7 +125,7 @@ As you can see, the JAR file is runnable.
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::  (v0.5.0.BUILD-SNAPSHOT)
 
-2013-10-25 09:37:57.838  ... com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 69317 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/rabbit-jms-boot-demo-1.0.0-SNAPSHOT.jar started by gturnquist)
+2013-10-25 09:37:57.838  ... com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 69317 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/rabbit-jms-boot-demo-1.2.0-SNAPSHOT.jar started by gturnquist)
 …
 ```
 
@@ -169,6 +169,8 @@ But it mandates a specific `rabbit-jms` client version:
         </dependencies>
     </dependencyManagement>
 ```
+
+where the property `rabbitmq-jms.version` is set in a properties section.
 
 Help
 ----
