@@ -144,7 +144,7 @@ Happy coding!
 
 Version issues
 --------------
-This code is using Rabbit JMS Client 1.1.3-SNAPSHOT level. We should use a production version.
+This code is using Rabbit JMS Client 1.1.4-SNAPSHOT level. We should use a production version.
 
 The project's parent dependency is **`spring-boot-starter-parent`**. That lets it pull in default versions of things like Spring JMS without having to spec the versions by leaning on Spring Boot's choices.
 

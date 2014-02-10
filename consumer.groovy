@@ -1,6 +1,6 @@
 package com.rabbitmq.jms.sample
 
-@Grab("com.rabbitmq.jms:rabbitmq-jms:1.1.3-SNAPSHOT")
+@Grab("com.rabbitmq.jms:rabbitmq-jms:1.1.4-SNAPSHOT")
 
 import com.rabbitmq.jms.admin.RMQConnectionFactory
 
