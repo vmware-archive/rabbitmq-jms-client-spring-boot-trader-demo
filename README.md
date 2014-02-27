@@ -4,12 +4,12 @@ This sample application demonstrates the [Rabbit JMS connector](http://blog.gopi
 
 To use it, you need to have RabbitMQ [installed](http://www.rabbitmq.com/download.html) and running.
 
-Assuming you have this up in one of your terminal windows:
+Assuming you have this up in one of your terminal windows (something like):
 
 ```
 $ rabbitmq-server
 
-              RabbitMQ 3.2.3. Copyright (C) 2007-2014 Pivotal Software, Inc.
+              RabbitMQ *.*.*. Copyright (C) 2007-2014 Pivotal Software, Inc.
   ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
   ##  ##
   ##########  Logs: /usr/local/var/log/rabbitmq/rabbit@localhost.log
