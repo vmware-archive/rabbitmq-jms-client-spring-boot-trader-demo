@@ -4,12 +4,12 @@ This sample application demonstrates the [Rabbit JMS connector](http://blog.gopi
 
 To use it, you need to have RabbitMQ [installed](http://www.rabbitmq.com/download.html) and running.
 
-Assuming you have this up in one of your terminal windows:
+Assuming you have this up in one of your terminal windows (something like):
 
 ```
 $ rabbitmq-server
 
-              RabbitMQ 3.2.3. Copyright (C) 2007-2014 Pivotal Software, Inc.
+              RabbitMQ *.*.*. Copyright (C) 2007-2014 Pivotal Software, Inc.
   ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
   ##  ##
   ##########  Logs: /usr/local/var/log/rabbitmq/rabbit@localhost.log
@@ -125,7 +125,7 @@ As you can see, the JAR file is runnable.
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::  (v0.5.0.BUILD-SNAPSHOT)
 
-2013-10-25 09:37:57.838  ... com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 69317 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/rabbit-jms-boot-demo-1.2.0-SNAPSHOT.jar started by gturnquist)
+2013-10-25 09:37:57.838  ... com.rabbitmq.jms.sample.StockQuoter      : Starting StockQuoter on retina with PID 69317 (/Users/gturnquist/src/rabbit-jms-boot-demo/target/rabbit-jms-boot-demo-1.0.3-SNAPSHOT.jar started by gturnquist)
 …
 ```
 
@@ -144,7 +144,7 @@ Happy coding!
 
 Version issues
 --------------
-This code is using Rabbit JMS Client 1.2.0-SNAPSHOT level. We should use a production version.
+This code is using Rabbit JMS Client development level. We should use a production version.
 
 The project's parent dependency is **`spring-boot-starter-parent`**. That lets it pull in default versions of things like Spring JMS without having to spec the versions by leaning on Spring Boot's choices.
 
