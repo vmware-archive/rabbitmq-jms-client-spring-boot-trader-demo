@@ -19,7 +19,7 @@
   <properties>
   <!-- dependency properties -->
     <java-compile-version>1.6</java-compile-version>
-    <rabbitmq-jms.version>1.2.4</rabbitmq-jms.version>
+    <rabbitmq-jms.version>1.2.5-SNAPSHOT</rabbitmq-jms.version>
     <commons-lang.version>2.6</commons-lang.version>
   <!-- pervasive properties -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
