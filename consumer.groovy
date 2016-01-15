@@ -3,9 +3,11 @@ package com.rabbitmq.jms.sample
 @Grab("com.rabbitmq.jms:rabbitmq-jms:1.4.7-SNAPSHOT")
 
 import com.rabbitmq.jms.admin.RMQConnectionFactory
+import org.springframework.jms.listener.adapter.MessageListenerAdapter
 
 @Configuration
-@EnableJmsMessaging
+@Log
+@EnableJms
 class StockConsumer {
 
   @Bean
@@ -15,10 +17,11 @@ class StockConsumer {
 
   @Bean
   DefaultMessageListenerContainer jmsListener(ConnectionFactory connectionFactory) {
+    log.info "connectionFactory => ${connectionFactory}"
     new DefaultMessageListenerContainer([
       connectionFactory: connectionFactory,
-      destinationName: "rabbit-trader",
-      pubSubDomain: true,
+      destinationName: "rabbit-trader-channel",
+      pubSubDomain: false,
       messageListener: new MessageListenerAdapter(new Receiver()) {{
         defaultListenerMethod = "receive"
       }}

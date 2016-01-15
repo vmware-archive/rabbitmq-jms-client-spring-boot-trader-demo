@@ -5,13 +5,14 @@ package com.rabbitmq.jms.sample
 @Grab("commons-lang:commons-lang:2.6")
 
 import com.rabbitmq.jms.admin.RMQConnectionFactory
-
 import org.apache.commons.lang.math.RandomUtils
-import org.springframework.scheduling.annotation.*
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.scheduling.annotation.EnableScheduling
+import org.springframework.scheduling.annotation.Scheduled
 
 @EnableScheduling
 @Log
-@EnableJmsMessaging
+@EnableJms
 class StockQuoter {
 
   def stocks = ["AAPL", "GD", "BRK.B"] // stock symbols
@@ -49,7 +50,7 @@ class StockQuoter {
     } as MessageCreator
 
     // And publish to RabbitMQ using Spring's JmsTemplate
-    jmsTemplate.send("rabbit-trader", messageCreator)
+    jmsTemplate.send("rabbit-trader-channel", messageCreator)
   }
 
 }
