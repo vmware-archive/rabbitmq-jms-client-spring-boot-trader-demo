@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.rabbitmq.jms.sample</groupId>
@@ -84,29 +84,15 @@
 	</dependencyManagement>
 
 	<repositories>
-		<repository>
-			<id>vmware-release</id>
-			<name>VMware Release repository</name>
-			<url>http://private.maven.vmware.com.s3.amazonaws.com/release</url>
-		</repository>
-		<repository>
-			<id>vmware-snapshot</id>
-			<name>VMware Snapshot repository</name>
-			<url>http://private.maven.vmware.com.s3.amazonaws.com/snapshot</url>
-		</repository>
+    <repository>
+      <id>ossrh</id>
+      <url>http://oss.sonatype.org/content/repositories/releases</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
 	</repositories>
-
-	<distributionManagement>
-		<repository>
-			<id>vmware-release</id>
-			<name>VMware Release Repository</name>
-			<url>s3://private.maven.vmware.com/release</url>
-		</repository>
-		<snapshotRepository>
-			<id>vmware-snapshot</id>
-			<name>VMware Snapshot Repository</name>
-			<url>s3://private.maven.vmware.com/snapshot</url>
-		</snapshotRepository>
-	</distributionManagement>
-
 </project>
