@@ -20,7 +20,7 @@
     <!-- dependency properties -->
     <java.version>1.8</java.version>
     <java-compile-version>${java.version}</java-compile-version>
-    <rabbitmq-jms.version>1.4.7</rabbitmq-jms.version>
+    <rabbitmq-jms.version>1.5.0</rabbitmq-jms.version>
     <commons-lang.version>2.6</commons-lang.version>
     <!-- pervasive properties -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

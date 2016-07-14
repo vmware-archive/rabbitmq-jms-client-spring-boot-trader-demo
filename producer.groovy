@@ -17,7 +17,7 @@
 
 package com.rabbitmq.jms.sample
 
-@Grab("com.rabbitmq.jms:rabbitmq-jms:1.4.7")
+@Grab("com.rabbitmq.jms:rabbitmq-jms:1.5.0")
 
 @Grab("commons-lang:commons-lang:2.6")
 
