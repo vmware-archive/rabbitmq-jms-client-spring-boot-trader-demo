@@ -17,7 +17,7 @@
 
 package com.rabbitmq.jms.sample
 
-@Grab("com.rabbitmq.jms:rabbitmq-jms:1.5.0")
+@Grab("com.rabbitmq.jms:rabbitmq-jms:1.7.0")
 
 import com.rabbitmq.jms.admin.RMQConnectionFactory
 import org.springframework.jms.listener.adapter.MessageListenerAdapter
