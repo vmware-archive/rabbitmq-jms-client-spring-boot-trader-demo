@@ -1,10 +1,10 @@
 # RabbitMQ JMS Client Demo on Spring Boot
 
-This sample application demonstrates the [Rabbit JMS connector](http://blog.gopivotal.com/products/messaging-with-jms-and-rabbitmq) by producing and consuming stock quotes.
+This sample application demonstrates the [Rabbit JMS connector](https://content.pivotal.io/blog) by producing and consuming stock quotes.
 
 ## Prerequisites 
 
-To use it, you need to have RabbitMQ [installed](http://www.rabbitmq.com/download.html) and running
+To use it, you need to have RabbitMQ [installed](https://www.rabbitmq.com/download.html) and running
 with the [JMS topic exchange plugin](https://github.com/rabbitmq/rabbitmq-jms-topic-exchange).
 
 Assuming RabbitMQ is running in a local terminal:
@@ -13,7 +13,7 @@ Assuming RabbitMQ is running in a local terminal:
 $ rabbitmq-server
 
               RabbitMQ *.*.*. Copyright (C) 2007-2016 Pivotal Software, Inc.
-  ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
+  ##  ##      Licensed under the MPL.  See https://www.rabbitmq.com/
   ##  ##
   ##########  Logs: /usr/local/var/log/rabbitmq/rabbit@localhost.log
   ######  ##        /usr/local/var/log/rabbitmq/rabbit@localhost-sasl.log
@@ -25,7 +25,7 @@ $ rabbitmq-server
 
 ## Getting started… fast!
 
-One of the fastest ways to get this demo going is using [Spring Boot's CLI](http://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-installing-spring-boot.html).
+One of the fastest ways to get this demo going is using [Spring Boot's CLI](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-installing-spring-boot.html).
 
 With Spring Boot CLI in `PATH`, run both parts of the demo with
 
